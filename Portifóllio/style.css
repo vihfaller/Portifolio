@@ -41,7 +41,7 @@ header a{
 
 header a:hover{
     color: #fff;
-    transform: scale(1.07);
+    transform: scale(1.2);
 }
 
 header nav ul{
@@ -66,7 +66,7 @@ header nav ul li{
 
 #btn-contato:hover{
     box-shadow: 0px 0px 8px rgb(192, 0, 192);
-    transform: scale(1.5);
+    transform: scale(1.1);
 }
 
 h2.titulo{
@@ -122,25 +122,47 @@ section.topo-do-site .flex{
     }
 }
 
+#btn-contato2{
+    padding: 10px 40px;
+    font-size: 18px;
+    font-weight: 600;
+    background-color: rgb(192, 0, 192);
+    border: 0;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: 1.2;
+}
+
+#btn-contato2:hover{
+    box-shadow: 0px 0px 8px rgb(192, 0, 192);
+    transform: scale(1.1);
+}
+
+
+
+
 /* ESTILO DAS ESPECIALIDADES */
 
-section.especialidades{
+section.especialidades {
     padding: 40px 4%;
-    justify-content: space-around;
-    align-items: center;
 }
 
-section.especialidades .flex{
-    gap: 60px;
+section.especialidades .flex {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border: red solid 2px;
 }
 
-.especialidades .especialidades-box{
+.especialidades .especialidades-box {
+    width: 30%;
     color: white;
     padding: 40px;
     border: 2px solid white;
-    margin-top: 45px;
     border-radius: 20px;
     transition: .2s;
+    box-sizing: border-box;
+    margin-top: 0;
 }
 
 .especialidades .especialidades-box:hover{
@@ -156,4 +178,39 @@ section.especialidades .flex{
 .especialidades .especialidades-box h3{
     font-size: 28px;
     margin: 15px 0;
+}
+
+/* ESTILO SOBRE */
+
+section.sobre .img-sobre{
+    border: red solid 2px;
+}
+
+section.sobre{
+    padding: 40px 4%;
+}
+
+section.sobre .flex{
+    align-items: center;
+    gap: 60px;
+}
+
+.sobre .txt-sobre{
+    color: #fff;
+}
+
+.sobre .txt-sobre h2{
+    font-size: 40px;
+    line-height: 40px;
+    margin-bottom: 30px;
+}
+
+.sobre .txt-sobre h2 span{
+    color: rgb(192, 0, 192);
+    display: block;
+}
+
+.sobre .txt-sobre p{
+    margin: 20px 0;
+    text-align: justify;
 }
